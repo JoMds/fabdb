@@ -69,6 +69,10 @@ module.exports={
          */
         rules: [
             {
+                test:/\.scss$/,
+                use:["style-loader","css-loader","sass-loader"]
+            },
+            {
                 test: /\.(js|jsx)$/,    //kind of file extension this rule should look for and apply in test
                 exclude: /node_modules/, //folder to be excluded
                 use:  'babel-loader' //loader which we are going to use
