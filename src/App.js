@@ -5,5 +5,6 @@ import './styles/main.scss';
 export default function Component(){
     return(<div>
         katiasdsad
+        asdasd
     </div>)
 }
