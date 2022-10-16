@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./search.module.scss";
 
 export default function Component({ getQuery}) {
-    const [text, setText] = useState("");
 
     const onChange=(e) =>{
         const lastPart = e.split("/").at(-1);
-        setText(lastPart)
         getQuery(lastPart)
         console.log(lastPart, "e")
     }
@@ -22,7 +20,6 @@ export default function Component({ getQuery}) {
                 placeholder="place URl"
                 autoFocus
             />
-            <button type="submit" >asd</button>
         </form>
     </section>)
 }
