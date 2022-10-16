@@ -26,7 +26,7 @@ export default function Component() {
         <div>
             {cost}
             <Search getQuery={(e) => setQuery(e)} />
-            <Cards options={cards} isLoading={loading} deckCost={cost} />
+            <Cards options={cards} isLoading={loading} cost={cost} />
         </div>
 
     );
