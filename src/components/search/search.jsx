@@ -6,7 +6,7 @@ export default function Component({ getQuery }) {
     const onChange = (e) => {
         const lastPart = e.split("/").at(-1);
         getQuery(lastPart)
-        console.log(lastPart, "e")
+        // console.log(lastPart, "e")
     }
 
 
