@@ -3,7 +3,7 @@ import styles from "./cards.module.scss"
 import clsx from "clsx"
 
 export default function Component({ options, isLoading, cost}) {
-    console.log(cost, "costInsideChild")
+    // console.log(cost, "costInsideChild")
     return isLoading ? (<h1> Loading...</h1>) : (
         <section className="">
             <div className={styles.header}>
