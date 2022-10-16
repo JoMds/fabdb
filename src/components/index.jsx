@@ -17,16 +17,14 @@ export default function Component() {
             .then((r) => {
                 setCards(r.cards)
                 setCost(r.deckCost)
-                // console.log(r.deckCost, "r", query, "query")
+                console.log(r.deckCost, "r", query, "query", r.cards,"cards")
                 setLoading(false)
             })
     }, [query])
 
     return (
-        <div>
-            {cost}
-        
-            <Search get Query={(e) => setQuery(e)} />
+        <div>   
+            <Search getQuery={(e) => setQuery(e)} />
             <Cards options={cards} isLoading={loading} cost={cost} />
         </div>
 

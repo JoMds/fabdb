@@ -14,7 +14,7 @@ export default function Component({ options, isLoading, cost}) {
             </div>
             <div>Total Cost : {cost}</div>  
             {options && options.map(O => (
-                <div className={styles.stats}>
+                <div key={` ${O.image} + ${O.cost}`} className={styles.stats}>
                     <div className={styles.w60}>{O.name}</div>
                     <div className={styles.w60}>{O.color}</div>
                     <div className={clsx(styles.w60, styles.red)}>{O.rarity}</div>
