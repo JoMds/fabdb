@@ -1,10 +1,11 @@
+import React, { useEffect, useState } from "react";
+import "./styles/main.scss";
+import Index from "./components/index";
 
-import React from "react";
-import './styles/main.scss';
-
-export default function Component(){
-    return(<div>
-        katiasdsad
-        asdasd
-    </div>)
+export default function Component() {
+  return (
+    <div>
+      <Index />
+    </div>
+  );
 }
