@@ -1,11 +1,12 @@
 import React from "react";
-import "./styles/main.scss";
+import styles from  "./styles/main.module.scss";
 import Index from "./components/index";
 
 export default function Component() {
   return (
-    <div>
+
+    <section className={styles.container}>
       <Index />
-    </div>
+    </section>
   );
 }

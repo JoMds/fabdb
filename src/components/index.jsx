@@ -23,9 +23,7 @@ export default function Component() {
     return (
         <div>
             <Search getQuery={(e) => setQuery(e)} />
-
             <Cards options={cards} isLoading={loading} />
-
         </div>
 
     );
