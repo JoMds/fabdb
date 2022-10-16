@@ -25,8 +25,8 @@ export default function Component() {
     return (
         <div>
             {cost}
-            tst
-            <Search getQuery={(e) => setQuery(e)} />
+        
+            <Search get Query={(e) => setQuery(e)} />
             <Cards options={cards} isLoading={loading} cost={cost} />
         </div>
 
